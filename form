@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>Form Data</title>
+	</head>
+
+	<body>
+		<h1 align="center">Form Registration</h1>
+		<form method="" action="">
+			<label>Enter First Name(required)</label>
+			<input type="text" placeholder="Enter your first name here" name="fname" required>
+			<br/>
+			<br/>
+
+			<label>Enter Last Name (Optional)</label>
+			<input type="text" placeholder="Enter your last name here" name="lname">
+			<br/>
+			<br/>
+
+			<label>Enter Date of Birth (Optional)</label>
+			<input type="date" name="date">
+			<br/>
+			<br/>
+
+			<label>Enter Password (Very Required)</label>
+			<input type="password" placeholder="Enter your password here" name="pwd" required>
+			<br/>
+			<br/>
+
+			<label>Enter Count Number (Optional)</label>
+			<input type="number" placeholder="Initialize with any number" name="cn" value="0">
+			<br/>
+			<br/>
+
+			<label>Enter Phone Number (requires exactly 10 numbers in length)</label>
+			<input type="phone" placeholder="Initialize with any number" name="pn" pattern="[0-9]{10}">
+			<br/>
+			<br/>
+
+			<label>Gender (Required)</label>
+			<input type="radio" name="gender">Male
+			<input type="radio" name="gender">Female
+			<br/>
+			<br/>
+
+			<label>Hobbies (Optional)</label>
+			<input type="checkbox" name="cycling">Cycling
+			<input type="checkbox" name="gaming">Gaming
+			<br/>
+			<br/>
+
+
+			<label>Email (Optional)</label>
+			<input type="email" name="e">
+			<br/>
+			<br/>
+
+			<label>File (Optional)</label>
+			<input type="file" name="file">
+			<br/>
+			<br/>
+
+			<label>Color (Optional)</label>
+			<input type="color" name="color">
+			<br/>
+			<br/>
+
+			<select multiple name="mul">
+				<option>Option 1</option>
+				<option>Option 2</option>
+				<option>Option 3</option>
+				<option>Option 4</option>
+			</select>
+			<br/>
+			<br/>
+
+			<input type="reset" value="Reset all Data">
+			<input type="submit" value="Test"/>
+		</form>
+	</body>
+</html>
