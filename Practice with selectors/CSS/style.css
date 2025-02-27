@@ -1,0 +1,32 @@
+
+body{
+    user-select: none;
+}
+
+.box + * > p:first-child{
+    height: 40px;
+    background-color: aqua;
+}
+
+.box + * > *:last-child{
+    background-color: blue;
+    color: white;
+}
+
+.box + * > *:not(:last-child){
+    font-style: italic;
+}
+
+.box + * > *:nth-child(2){
+    background-color: bisque;
+}
+
+.box + * > *:nth-last-child(2){
+    background-color: blueviolet;
+    color: white;
+}
+
+.box ~ p{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,14 @@
+~ selectors
++ selectors
+:first-child
+:last-child
+:nth-child(num)
+:nth-last-child(num)
+:not(:last-child)
+.class selectors
+#id selectors
+* Universal selectors
+
+body{
+    user-select: none;
+}
