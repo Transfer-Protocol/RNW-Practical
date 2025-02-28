@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.door{
+    width: 350px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 0 auto;
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.doorPart{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    transition:all 0.5s;
+}
+
+.left{
+    transform-origin: left center;
+    background-color: gray;
+    left: 0;
+}
+
+.right{
+    transform-origin: right center;
+    background-color: darkgray;
+    right: 0;
+}
+
+.welcome{
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    text-align: center;
+    line-height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: rotateX(80deg) translateX(-50%);
+    padding-top: 20%;
+    z-index: -1;
+    transform-origin: center bottom;
+}
+
+.door:hover .right{
+    transform: rotateY(-90deg);
+}
+
+.door:hover .left{
+    transform: rotateY(90deg);
+}
+
+.chat{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.fa-solid.fa-message{
+    color: white;
+    transform: translateY(50%);
+}
+
+.chat{
+    line-height: 50%;
+    text-align: center;
+}
+
+
+.box{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background-color: aqua;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translateX(-50%) translateY(-50%);
+}
+
+
+.header{
+    text-align: center;
+    height: 60px;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top:-10px;
+    z-index: 2;
+}
